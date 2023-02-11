@@ -1,18 +1,27 @@
 <script>
     import avatar_bruno_about from '$lib/images/avatar/avatar-bruno-about.jpg';
+    import cv_bruno from '$lib/documents/cv-bruno-canini.pdf';
     /** @type {import('./$types').PageData} */
     export let data;
 </script>
 
 <svelte:head>
-	<title>Expériences professionnelles de Bruno Canini E-commerce • E-merchandising</title>
-	<meta name="description" content="Expériences professionnelles de Bruno Canini spécialiste E-commerce • E-merchandising • Moteur de recherche • AB Test • U.X • Conversions à Lyon" />
+	<title>» A propos de Bruno Canini • E-commerce • E-merchandising</title>
+	<meta name="description" content="➤ A propos de Bruno Canini spécialiste E-commerce • E-merchandising • Moteur de recherche • AB Test • U.X • Conversions à Lyon et ses environs" />
   <meta name="robots" content="index, follow" />
+  <meta property="og:url" content="https://brunocanini/a-propos/" />
+  <meta property="og:site_name" content="Brunocanini.com" />
+  <meta property="og:title" content="» A propos de Bruno Canini • E-commerce • E-merchandising" />
+  <meta property="og:description" content="➤ A propos de Bruno Canini spécialiste E-commerce • E-merchandising • Moteur de recherche • AB Test • U.X • Conversions à Lyon et ses environs" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:type" content="article" />
+  <meta property="og:article:author" content="Bruno Canini" />
+  <meta property="og:article:section" content="A propos" />
 </svelte:head>
 
 <section id="about-me">
       <div class="container col-xxl-8 px-4 py-3">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5 px-4">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5 px-2 px-md-5">
           <div class="col-10 col-sm-8 col-lg-6">
             <img src={avatar_bruno_about} class="d-block mx-lg-auto img-fluid rounded-3" alt="A propos de Bruno Canini" width="300"
               height="300" loading="lazy">
@@ -23,13 +32,13 @@
             <p class="lead">{@html data.about.description}</p>
             <p class="lead">{data.about.contact}</p>
             <div class="d-grid gap-2 d-flex justify-content-md-start pt-4">
-              <button type="button" class="btn btn-outline-light me-2 btn-border"><svg stroke="currentColor"
-                  fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M124 80v322c0 7.7-6.3 14-14 14s-14-6.3-14-14V112H80c-17.7 0-32 14.3-32 32v288c0 17.7 14.3 32 32 32h353.1c17 0 30.9-13.8 30.9-30.9V80c0-17.7-14.3-32-32-32l-278 2c-17.7 0-30 12.3-30 30zm66 32h84c7.7 0 14 6.3 14 14s-6.3 14-14 14h-84c-7.7 0-14-6.3-14-14s6.3-14 14-14zm0 160h148c7.7 0 14 6.3 14 14s-6.3 14-14 14H190c-7.7 0-14-6.3-14-14s6.3-14 14-14zm196 108H190c-7.7 0-14-6.3-14-14s6.3-14 14-14h196c7.7 0 14 6.3 14 14s-6.3 14-14 14zm0-160H190c-7.7 0-14-6.3-14-14s6.3-14 14-14h196c7.7 0 14 6.3 14 14s-6.3 14-14 14z">
-                  </path>
-                </svg> {data.about.texte_bouton}</button>
+              <a href={cv_bruno} type="button" class="btn btn-outline-light me-2 btn-border" target="_blank" rel="noreferrer"><svg stroke="currentColor"
+                fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M124 80v322c0 7.7-6.3 14-14 14s-14-6.3-14-14V112H80c-17.7 0-32 14.3-32 32v288c0 17.7 14.3 32 32 32h353.1c17 0 30.9-13.8 30.9-30.9V80c0-17.7-14.3-32-32-32l-278 2c-17.7 0-30 12.3-30 30zm66 32h84c7.7 0 14 6.3 14 14s-6.3 14-14 14h-84c-7.7 0-14-6.3-14-14s6.3-14 14-14zm0 160h148c7.7 0 14 6.3 14 14s-6.3 14-14 14H190c-7.7 0-14-6.3-14-14s6.3-14 14-14zm196 108H190c-7.7 0-14-6.3-14-14s6.3-14 14-14h196c7.7 0 14 6.3 14 14s-6.3 14-14 14zm0-160H190c-7.7 0-14-6.3-14-14s6.3-14 14-14h196c7.7 0 14 6.3 14 14s-6.3 14-14 14z">
+                </path>
+              </svg> {data.about.texte_bouton}</a>
               <span class="gap gap-x-5"><a href="mailto:bruno.canini@gmail.com" class="group cursor-pointer" aria-label="Email"
                   title="Email"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
                     height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"

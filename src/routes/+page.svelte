@@ -1,5 +1,6 @@
 <script>
 	  import avatar_bruno from '$lib/images/avatar/avatar-bruno.jpg';
+    import cv_bruno from '$lib/documents/cv-bruno-canini.pdf';
     export let data;
     const { competences_liste } = data;
     const { objects } = data;
@@ -9,25 +10,30 @@
 	<title>{data.meta_title}</title>
 	<meta name="description" content={data.meta_description} />
   <meta name="robots" content={data.meta_robots} />
+  <meta property="og:url" content="https://brunocanini" />
+  <meta property="og:site_name" content="Brunocanini.com" />
+  <meta property="og:title" content={data.meta_title} />
+  <meta property="og:description" content={data.meta_description} />
+  <meta property="og:locale" content="fr_FR" />
 </svelte:head>
 
 <section id="about">
     <div class="container col-xxl-8 px-4 py-4">
       <div class="row flex-lg-row-reverse align-items-center g-5 py-2">
         <div class="col-5 col-sm-5 col-lg-5">
-          <img class="mx-auto d-block rounded-circle" src={avatar_bruno} alt="avatar" loading="lazy">
+          <img class="mx-auto d-block rounded-circle" src={avatar_bruno} alt="avatar Bruno Canini" loading="lazy">
         </div>
         <div class="col-lg-6">
           <h1 class="display-5 fw-bold lh-1 mb-3">{data.titre_poste}</h1>
           <p class="lead">{@html data.accroche_poste}</p>
           <div class="d-grid gap-2 d-flex justify-content-md-start">
-            <button type="button" class="btn btn-outline-light me-2 btn-border"><svg stroke="currentColor"
+            <a href={cv_bruno} type="button" class="btn btn-outline-light me-2 btn-border" target="_blank" rel="noreferrer"><svg stroke="currentColor"
                 fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M124 80v322c0 7.7-6.3 14-14 14s-14-6.3-14-14V112H80c-17.7 0-32 14.3-32 32v288c0 17.7 14.3 32 32 32h353.1c17 0 30.9-13.8 30.9-30.9V80c0-17.7-14.3-32-32-32l-278 2c-17.7 0-30 12.3-30 30zm66 32h84c7.7 0 14 6.3 14 14s-6.3 14-14 14h-84c-7.7 0-14-6.3-14-14s6.3-14 14-14zm0 160h148c7.7 0 14 6.3 14 14s-6.3 14-14 14H190c-7.7 0-14-6.3-14-14s6.3-14 14-14zm196 108H190c-7.7 0-14-6.3-14-14s6.3-14 14-14h196c7.7 0 14 6.3 14 14s-6.3 14-14 14zm0-160H190c-7.7 0-14-6.3-14-14s6.3-14 14-14h196c7.7 0 14 6.3 14 14s-6.3 14-14 14z">
                 </path>
-              </svg> {data.texte_bouton}</button>
+              </svg> {data.texte_bouton}</a>
             <span class="gap gap-x-5"><a href="mailto:bruno.canini@gmail.com" class="group cursor-pointer"
                 aria-label="Email" title="Email"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
                   viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"
@@ -60,11 +66,11 @@
   </section>
 
   <section id="about-me">
-    <div class="container col-xxl-8 px-5 py-5">
+    <div class="container col-xxl-8 px-4 px-md-5 py-5">
       <h2 class="border-b display-6 fw-normal">A propos</h2>
       <p class="col-md-12 fs-6 lh-base">{@html data.a_propos_texte}</p>
       <p class="col-md-12 fs-6 lh-base">{@html data.a_propos_competences}</p>
-      <a class="text-accent moved" href="/about"><span class="mr-1"><svg stroke="currentColor" fill="currentColor"
+      <a class="text-accent moved" href="/a-propos/"><span class="mr-1"><svg stroke="currentColor" fill="currentColor"
             stroke-width="0" viewBox="0 0 24 24" height="1.4em" width="1.4em" xmlns="http://www.w3.org/2000/svg">
             <path fill="none" d="M0 0h24v24H0z"></path>
             <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
@@ -74,8 +80,8 @@
   </section>
 
   <section id="toolbox">
-    <div class="container col-xxl-8 px-5 py-5">
-      <h2 class="display-6 fw-bold fs-3 text-accent"><span class="rounded-full bg-back-subtle"><svg
+    <div class="container col-xxl-8 px-4 px-md-5 py-5">
+      <h2 class="display-6 fw-bold fs-3 text-accent text-nowrap"><span class="rounded-full bg-back-subtle"><svg
             stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em"
             xmlns="http://www.w3.org/2000/svg">
             <path
@@ -87,7 +93,7 @@
           <div class="col d-flex align-items-start">
             {@html competence_liste.logo}
             <div>
-              <h4 class="fw-bold mb-0">{competence_liste.titre}</h4>
+              <h3 class="fw-bold mb-0 fs-4">{competence_liste.titre}</h3>
               <p>{@html competence_liste.description}</p>
             </div>
           </div>
@@ -97,7 +103,7 @@
   </section>
 
 <section id="works">
-    <div class="container col-xxl-8 px-5 py-3">
+    <div class="container col-xxl-8 px-4 px-md-5 py-3">
       <h2 class="display-6 fw-bold fs-3 text-accent"><span class="rounded-full bg-back-subtle"><svg
             stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em"
             xmlns="http://www.w3.org/2000/svg">
@@ -106,7 +112,7 @@
             </path>
           </svg></span> Expériences professionnelles</h2>
           {#each objects as object}
-      <a href="/experiences/{object.slug}" class="works px-3">
+      <a href="/experiences/{object.slug}/" class="works px-3">
         <div class="row mb-3 px-3 py-1 hover-works">
           <div class="col-md-10 themed-grid-col">
             <h3 class="{object.metadata.borderw_cssclass} fw-normal h3works">{object.title}</h3>
@@ -147,8 +153,8 @@
         <p class="mb-4 fs-6 lh-base">Je suis à la recherche de nouvelles opportunités et d'une équipe géniale avec
           laquelle travailler !</p>
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-          <a href="mailto:bruno.canini@gmail.com" aria-label="Email" title="bruno.canini@gmail.com"><button type="button" class="btn btn-primary btn-lg px-4 gap-3 btn-fill-one">📧 Envoyez un message
-            !</button></a>
+          <a href="mailto:bruno.canini@gmail.com" aria-label="Email" title="bruno.canini@gmail.com" type="button" class="btn btn-primary btn-lg px-4 gap-3 btn-fill-one">📧 Envoyez un message
+            !</a>
         </div>
       </div>
     </div>
@@ -157,7 +163,7 @@
   <section id="seo-text">
   <div class="px-4 py-2 my-4 text-justify">
       <div class="col-lg-7 mx-auto">
-        <p class="fs-6 fw-light lh-sm"><p>Le <strong>e-commerce</strong> ou <strong>commerce &eacute;lectronique</strong> est un excellent moyen d&#39;atteindre plus de clients et d&#39;augmenter vos ventes. Avec les bonnes strat&eacute;gies, vous pouvez tirer parti du canal Web et assurer &agrave; votre entreprise une longeur d&#39;avance sur la concurrence. L&#39;un des &eacute;l&eacute;ments cl&eacute;s de la r&eacute;ussite du <strong>e-commerce</strong> est le <strong>e-merchandising</strong> : il s&#39;agit de s&#39;assurer que les produits sont pr&eacute;sent&eacute;s de mani&egrave;re ordonn&eacute;s et bien visible sur les sites Web ou Applications afin d&#39;attirer l&#39;attention des acheteurs potentiels. Les <strong>A/B tests</strong> sont &eacute;galement importants, car ils vous permettent de comparer diff&eacute;rentes pr&eacute;sentations de produits ou design de pages Web afin de d&eacute;terminer celles qui fonctionnent le mieux pour g&eacute;n&eacute;rer des <strong>conversions</strong>. En outre, le <strong>searchandising</strong> permet de s&#39;assurer que les acheteurs trouvent facilement ce qu&#39;ils cherchent depuis le <strong>moteur de recherche</strong>, en optimisant les mots-cl&eacute;s associ&eacute;s &agrave; chaque produit et en tenant compte des pr&eacute;f&eacute;rences clients ou des tendances de&nbsp;recherches au fil du temps. En tirant parti de ces outils disponibles aujourd&#39;hui, tels que le <strong>e-merchandising</strong>, le <strong>searchandising</strong>, les <strong>tests A/B</strong> et la <strong>Web analyse</strong>, vous serez en mesure de r&eacute;ussir sur le Web dans un march&eacute; du <strong>e-commerce</strong> en pleine croissance. Alors pourquoi ne pas commencer &agrave; tirer parti de ces technologies d&egrave;s aujourd&#39;hui ?</p>
+        <p class="fs-6 fw-light lh-sm"><p>Le <strong>e-commerce</strong> ou <strong>commerce &eacute;lectronique</strong> est un excellent moyen d&#39;atteindre plus de clients et d&#39;augmenter vos ventes. Avec les bonnes strat&eacute;gies, vous pouvez tirer parti du canal Web et assurer &agrave; votre entreprise une longeur d&#39;avance sur la concurrence. L&#39;un des &eacute;l&eacute;ments cl&eacute;s de la r&eacute;ussite du <strong>e-commerce</strong> est le <strong>e-merchandising</strong> : il s&#39;agit de s&#39;assurer que les produits soient pr&eacute;sent&eacute;s de mani&egrave;re ordonn&eacute;s et bien visibles sur les sites Web ou Applications afin d&#39;attirer l&#39;attention des acheteurs potentiels. Les <strong>A/B tests</strong> sont &eacute;galement importants, car ils vous permettent de comparer diff&eacute;rentes pr&eacute;sentations de produits ou design de pages Web afin de d&eacute;terminer celles qui fonctionnent le mieux pour g&eacute;n&eacute;rer des <strong>conversions</strong>. En outre, le <strong>searchandising</strong> permet de s&#39;assurer que les acheteurs trouvent facilement ce qu&#39;ils cherchent depuis le <strong>moteur de recherche</strong>, en optimisant les mots-cl&eacute;s associ&eacute;s &agrave; chaque produit et en tenant compte des pr&eacute;f&eacute;rences clients ou des tendances de&nbsp;recherches au fil du temps. En tirant parti de ces outils disponibles aujourd&#39;hui, tels que le <strong>e-merchandising</strong>, le <strong>searchandising</strong>, les <strong>tests A/B</strong> et la <strong>Web analyse</strong>, vous serez en mesure de r&eacute;ussir sur le Web dans un march&eacute; du <strong>e-commerce</strong> en pleine croissance. Alors pourquoi ne pas commencer &agrave; tirer parti de ces technologies d&egrave;s aujourd&#39;hui ?</p>
       </div>
     </div>
   </section>

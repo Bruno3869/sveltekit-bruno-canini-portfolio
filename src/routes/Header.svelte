@@ -1,5 +1,5 @@
 <script>
-
+  import cv_bruno from '$lib/documents/cv-bruno-canini.pdf';
 </script>
 
 <header class="p-3 text-bg-dark sticky-top">
@@ -12,19 +12,18 @@
           </a>
           <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
             <li><a href="/" class="nav-link px-2 text-white text-sm-opacity"><span
-                  class="text-sm">brunocanini</span><span class="text-sm text-accent">.com</span></a></li>
-            <li><a href="/" class="nav-link px-2 text-white">Accueil</a></li>
-            <li><a href="/experiences" class="nav-link px-2 text-secondary navheader">Expériences</a></li>
-            <li><a href="/a-propos" class="nav-link px-2 text-secondary navheader">A propos</a></li>
+                  class="text-sm">Brunocanini</span><span class="text-sm text-accent">.com</span></a></li>
+            <li><a href="/experiences/" class="nav-link px-2 text-secondary navheader">Expériences</a></li>
+            <li><a href="/a-propos/" class="nav-link px-2 text-secondary navheader">A propos</a></li>
           </ul>
           <div class="text-end">
-            <button type="button" class="btn btn-outline-light me-2 btn-border"><svg stroke="currentColor"
+            <a href={cv_bruno} type="button" class="btn btn-outline-light me-2 btn-border" target="_blank" rel="noreferrer"><svg stroke="currentColor"
                 fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M124 80v322c0 7.7-6.3 14-14 14s-14-6.3-14-14V112H80c-17.7 0-32 14.3-32 32v288c0 17.7 14.3 32 32 32h353.1c17 0 30.9-13.8 30.9-30.9V80c0-17.7-14.3-32-32-32l-278 2c-17.7 0-30 12.3-30 30zm66 32h84c7.7 0 14 6.3 14 14s-6.3 14-14 14h-84c-7.7 0-14-6.3-14-14s6.3-14 14-14zm0 160h148c7.7 0 14 6.3 14 14s-6.3 14-14 14H190c-7.7 0-14-6.3-14-14s6.3-14 14-14zm196 108H190c-7.7 0-14-6.3-14-14s6.3-14 14-14h196c7.7 0 14 6.3 14 14s-6.3 14-14 14zm0-160H190c-7.7 0-14-6.3-14-14s6.3-14 14-14h196c7.7 0 14 6.3 14 14s-6.3 14-14 14z">
                 </path>
-              </svg> Mon CV</button>
+              </svg> Mon CV</a>
             <span class="gap gap-x-5"><a href="mailto:bruno.canini@gmail.com" class="group cursor-pointer"
                 aria-label="Email" title="Email"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
                   viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"

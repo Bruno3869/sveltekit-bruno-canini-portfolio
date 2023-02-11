@@ -4,13 +4,21 @@
 </script>
 
 <svelte:head>
-	<title>Expériences professionnelles de Bruno Canini E-commerce • E-merchandising</title>
-	<meta name="description" content="Expériences professionnelles de Bruno Canini spécialiste E-commerce • E-merchandising • Moteur de recherche • AB Test • U.X • Conversions à Lyon" />
+	<title>» Expériences professionnelles de Bruno Canini • E-commerce</title>
+	<meta name="description" content="➤ Expériences professionnelles de Bruno Canini spécialiste E-commerce • E-merchandising • Moteur de recherche • AB Test • U.X • Conversions à Lyon" />
   <meta name="robots" content="index, follow" />
+  <meta property="og:url" content="https://brunocanini/experiences/" />
+  <meta property="og:site_name" content="Brunocanini.com" />
+  <meta property="og:title" content="» Expériences professionnelles de Bruno Canini • E-commerce" />
+  <meta property="og:description" content="➤ Expériences professionnelles de Bruno Canini spécialiste E-commerce • E-merchandising • Moteur de recherche • AB Test • U.X • Conversions à Lyon" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:type" content="article" />
+  <meta property="og:article:author" content="Bruno Canini" />
+  <meta property="og:article:section" content="Expériences professionnelles" />
 </svelte:head>
 
 <section id="works">
-    <div class="container col-xxl-8 px-5 py-5">
+    <div class="container col-xxl-8 px-4 px-md-5 py-5">
       <h2 class="display-6 fw-bold fs-3 text-accent"><span class="rounded-full bg-back-subtle"><svg
             stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em"
             xmlns="http://www.w3.org/2000/svg">
@@ -19,7 +27,7 @@
             </path>
           </svg></span> Expériences professionnelles</h2>
           {#each objects as object}
-      <a href="/experiences/{object.slug}" class="works px-3">
+      <a href="/experiences/{object.slug}/" class="works px-3">
         <div class="row mb-3 px-3 py-1 hover-works">
           <div class="col-md-10 themed-grid-col">
             <h3 class="{object.metadata.borderw_cssclass} fw-normal h3works">{object.title}</h3>
@@ -50,7 +58,7 @@
   <section id="seo-text">
   <div class="px-4 py-2 my-2 text-justify">
       <div class="col-lg-7 mx-auto">
-        <p class="fs-6 fw-light lh-sm"><p>Le <strong>e-commerce</strong> ou <strong>commerce &eacute;lectronique</strong> transforme la fa&ccedil;on dont les entreprises fonctionnent, qu&#39;il s&#39;agisse d&#39;<strong>Akeneo PIM</strong> pour la gestion des informations sur les produits, du <strong>SEO</strong> pour l&#39;optimisation des moteurs de recherche, de <strong>Photoshop</strong> pour l&#39;&eacute;dition d&#39;images ou de <strong>Google Analytics</strong> pour le suivi des performances des sites ou applications, il existe de nombreuses solutions qui facilitent plus que jamais la mise en place d&#39;une boutique en ligne ! Pour des solutions plus avanc&eacute;es telles que les <strong>tests A/B</strong> avec <strong>AB Tasty</strong> ou le <strong>Searchandising</strong> (optimisation de la visibilit&eacute; des produits&nbsp;sur le&nbsp;moteur&nbsp;de recherche) avec <strong>Sensefuel</strong> ces outils demandent des comp&eacute;tences avanc&eacute;es. La solution <strong>ContentSquare</strong> fournit des informations pr&eacute;cieuses sur le <strong>comportement</strong> et le <strong>parcours des utilisateurs</strong>, ce qui aide &agrave; optimiser votre site en cons&eacute;quence. <strong>Magento 2</strong> a r&eacute;cemment fait son entr&eacute;e sur la sc&egrave;ne avec sa puissante plate-forme offrant des fonctionnalit&eacute;s telles que la notation des produits en fonction des &eacute;valuations et des avis des clients, ainsi que des mod&egrave;les de templates HTML. Enfin, si vous &ecirc;tes int&eacute;ress&eacute; par l&#39;&eacute;volution de votre site <strong>Web</strong> ou <strong>Applications</strong>, les comp&eacute;tences de <strong>Chef de projets</strong> aident &agrave; suivre les d&eacute;veloppements en cours et les &eacute;volutions au sein de votre boutique en ligne, permettant aux &eacute;quipes de rester organis&eacute;es et efficaces tout en travaillant ensemble vers le succ&egrave;s ! Dans l&#39;ensemble, l&#39;<strong>e-commerce</strong> poursuit sa croissance rapide (<strong>+13% en 2021</strong>), offrant de nombreuses opportunit&eacute;s aux petites et grandes entreprises, quelle que soit la taille de votre entreprise ou de votre secteur d&#39;activit&eacute;, cette technologie continuera &agrave; r&eacute;volutionner la vente sur Internet aujourd&#39;hui et demain !</p>
+        <p class="fs-6 fw-light lh-sm"><p>Le <strong>e-commerce</strong> ou <strong>commerce &eacute;lectronique</strong> transforme la fa&ccedil;on dont les entreprises fonctionnent, qu&#39;il s&#39;agisse d&#39;<strong>Akeneo PIM</strong> pour la gestion des informations sur les produits, du <strong>SEO</strong> pour l&#39;optimisation des moteurs de recherche, de <strong>Photoshop</strong> pour l&#39;&eacute;dition d&#39;images ou de <strong>Google Analytics</strong> pour le suivi des performances des sites ou applications, il existe de nombreuses solutions qui facilitent plus que jamais la mise en place d&#39;une boutique en ligne ! Pour des solutions plus avanc&eacute;es telles que les <strong>tests A/B</strong> avec <strong>AB Tasty</strong> ou le <strong>searchandising</strong> (optimisation de la visibilit&eacute; des produits&nbsp;sur le&nbsp;moteur&nbsp;de recherche) avec <strong>Sensefuel</strong> ces outils demandent des comp&eacute;tences avanc&eacute;es. La solution <strong>ContentSquare</strong> fournit des informations pr&eacute;cieuses sur le <strong>comportement</strong> et le <strong>parcours des utilisateurs</strong>, ce qui aide &agrave; optimiser votre site en cons&eacute;quence. <strong>Magento 2</strong> a r&eacute;cemment fait son entr&eacute;e sur la sc&egrave;ne avec sa puissante plate-forme offrant des fonctionnalit&eacute;s telles que la notation des produits en fonction des &eacute;valuations et des avis des clients, ainsi que des mod&egrave;les de templates HTML. Enfin, si vous &ecirc;tes int&eacute;ress&eacute; par l&#39;&eacute;volution de votre site <strong>Web</strong> ou <strong>applications</strong>, les comp&eacute;tences de <strong>chef de projets</strong> aident &agrave; suivre les d&eacute;veloppements en cours et les &eacute;volutions au sein de votre boutique en ligne, permettant aux &eacute;quipes de rester organis&eacute;es et efficaces tout en travaillant ensemble vers le succ&egrave;s ! Dans l&#39;ensemble, l&#39;<strong>e-commerce</strong> poursuit sa croissance rapide (<strong>+13% en 2021</strong>), offrant de nombreuses opportunit&eacute;s aux petites et grandes entreprises, quelle que soit la taille de votre entreprise ou de votre secteur d&#39;activit&eacute;, cette technologie continuera &agrave; r&eacute;volutionner la vente sur Internet aujourd&#39;hui et demain !</p>
       </div>
     </div>
   </section>
@@ -70,6 +78,10 @@
 
   .text-accent {
     color: var(--color-accent);
+  }
+
+  .bulle {
+    color: var(--color-fore-subtle);
   }
 
 </style>

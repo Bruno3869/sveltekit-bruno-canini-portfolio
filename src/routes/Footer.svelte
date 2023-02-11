@@ -2,13 +2,13 @@
 
 </script>
 
-<div class="container col-xxl-8 px-5 pb-4">
+<div class="container col-xxl-8 px-4 px-md-5 pb-4">
     <footer class="py-4 my-4">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 d-none d-lg-flex">
           <li><a href="/" class="nav-link px-2 text-white">Accueil</a></li>
-          <li><a href="/experiences" class="nav-link px-2 text-secondary navheader">Expériences</a></li>
-          <li><a href="/a-propos" class="nav-link px-2 text-secondary navheader">A propos</a></li>
+          <li><a href="/experiences/" class="nav-link px-2 text-secondary navheader">Expériences</a></li>
+          <li><a href="/a-propos/" class="nav-link px-2 text-secondary navheader">A propos</a></li>
         </ul>
         <div class="text-end pb-1">
           <span class="gap gap-x-5"><a href="mailto:bruno.canini@gmail.com" class="group cursor-pointer" aria-label="Email"

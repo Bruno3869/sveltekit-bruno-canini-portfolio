@@ -6,13 +6,24 @@
 
 <svelte:head>
 {#each items as item}
-	<title>{item.metadata.seo_title}</title>
-	<meta name="description" content="Description expériences" />
+	<title>{item.title}</title>
+	<meta name="description" content={item.metadata.seo_description} />
+  <meta name="robots" content={item.metadata.seo_robots.value} />
+  <meta property="og:url" content='https://brunocanini/{item.slug}/' />
+  <meta property="og:site_name" content="Brunocanini.com" />
+  <meta property="og:title" content={item.metadata.seo_title} />
+  <meta property="og:description" content={item.metadata.seo_description} />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:type" content="article" />
+  <meta property="og:article:published_time" content={item.created_at} />
+  <meta property="og:article:modified_time" content={item.modified_at} />
+  <meta property="og:article:author" content="Bruno Canini" />
+  <meta property="og:article:section" content="Expériences professionnelles" />
 {/each}
 </svelte:head>
 
 <section id="works">
-    <div class="container col-xxl-8 px-5 py-5">
+    <div class="container col-xxl-8 px-4 px-md-5q py-5">
           {#each items as item}
         <div class="row mb-3 px-3 py-1 border-bottom">
           <div class="col-md-10 themed-grid-col">
@@ -53,6 +64,10 @@
 
   .text-accent {
     color: var(--color-accent);
+  }
+
+  .bulle {
+    color: var(--color-fore-subtle);
   }
 
 </style>
