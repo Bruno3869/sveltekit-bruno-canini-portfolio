@@ -153,7 +153,7 @@
         <p class="mb-4 fs-6 lh-base">Je suis à la recherche de nouvelles opportunités et d'une équipe géniale avec
           laquelle travailler !</p>
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-          <a href="mailto:bruno.canini@gmail.com" aria-label="Email" title="bruno.canini@gmail.com" type="button" class="btn btn-primary btn-lg px-4 gap-3 btn-fill-one">📧 Envoyez un message
+          <a href="mailto:bruno.canini@gmail.com" aria-label="Email" title="bruno.canini@gmail.com" type="button" class="btn btn-primary btn-lg px-4 gap-3 btn-fill-one border-0">📧 Envoyez un message
             !</a>
         </div>
       </div>
