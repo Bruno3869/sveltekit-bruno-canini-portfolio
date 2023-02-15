@@ -6,8 +6,8 @@
 
 <svelte:head>
 {#each items as item}
-	<title>{item.title}</title>
-	<meta name="description" content={item.metadata.seo_description} />
+  <title>{item.metadata.seo_title}</title>
+  <meta name="description" content={item.metadata.seo_description} />
   <meta name="robots" content={item.metadata.seo_robots.value} />
   <meta property="og:url" content='https://brunocanini/{item.slug}/' />
   <meta property="og:site_name" content="Brunocanini.com" />
